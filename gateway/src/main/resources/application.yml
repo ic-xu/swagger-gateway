@@ -1,0 +1,19 @@
+server:
+  port: 7777
+  servlet:
+    application-display-name: gateway
+
+
+
+
+# Spring
+spring:
+  profiles:
+    active: dev
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+      discovery:
+        root: /demo
+  application:
+    name: gateway
